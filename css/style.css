@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'Roboto';
+  src: 	url('../font/Roboto-Regular-webfont.eot');
+  src: 	url('../font/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	  	url('../font/Roboto-Regular-webfont.woff') format('woff'), 
+	    url('../font/Roboto-Regular-webfont.ttf')  format('truetype'),
+	    url('../font/Roboto-Regular-webfont.svg') format('svg');
+}
+
+body{
+	margin: 0;
+	background-color: #FAFAFA;
+	font-family: Roboto;
+}
+
+header{
+	background-color: #303f9f;
+	text-align: center;
+	padding-bottom: 10px;
+}
+nav{
+	background-color: #303f9f;
+	text-align: center;
+}
+
+h1{
+	letter-spacing: 5px;
+	margin: 0;
+	color: white;
+	margin-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 5px;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+nav ul li{
+	color: white;
+	padding: 20px;
+	text-decoration: none;
+}
+
+nav ul li:hover{
+	color:#ffab00;
+	cursor: pointer;
+}
+
+#inicio{
+	text-align: center;
+	margin: 0 auto;
+}
+
+#imagenInicio{
+	height: 100vh;
+	z-index: 1;
+}
+
+.despues{
+	display: none;
+}
+
+#tablas{
+	margin-top: 20px;
+	margin-bottom: 80px;
+	border: none;
+}
+
+#tablas ul li a{
+	outline: none;
+}
+
+#tablas div article{
+	border-bottom: 1px solid #E0E0E0;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#tablas div article img{
+	margin: 0 auto;
+}
+#tablas div article div{
+	margin: 0;
+	text-align: center;
+}
+
+#tablas div article p{
+	color: rgba(0,0,0,.57);
+}
+
+
+#tablas div article span{
+	color: black;
+	font-size: 19px;
+}
+
+main{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-bottom: 80px;
+}
+
+main article{
+	border: 1px solid;
+	width: 235px;
+	margin: 15px 15px;
+	background-color: #FFFFFF;
+}
+
+main article img{
+	height: 235px;
+}
+
+main article p:first-child{
+	margin-top:0;
+	padding: 0;
+}
+
+main article p{
+	padding: 0 10px;
+}
+
+
+span{
+	font-weight: bold;
+}
+
+#formulario{
+	width: 554px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(224, 224, 224);
+    border-image: initial;
+    margin: 20px auto;
+}
+
+div > label{
+	display: inline-block;
+	margin-left: 25px;
+	width: 120px;
+	padding: 5px;
+	vertical-align: top;
+}
+
+aside{
+	color: #848484;
+	font-size: 11px;
+}
+
+#formulario div{
+	margin-top: 20px;
+}
+
+#formulario textarea{
+	width: 192px;
+	height: 100px;
+	resize: none;
+}
+
+#actualizar, #registrar, #registrarse, #logearse{
+	margin: 0 20px;
+	margin-bottom: 20px;
+	padding: 4px 10px;
+	padding-bottom: 6px;
+	line-height: 20px;
+	background-color: #848484;
+	border-radius: 2px;
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
+	outline: none;
+	border: none;
+	text-decoration: none;
+	color: white;
+}
+
+#cajaRegistro, #cajaLogin{
+	text-align: center;
+}
+
+i{
+	color: red;
+	vertical-align: top;
+	font-size: 8px;
+}
+
+#dialog-message, #dialog-message-ponencia{
+	display: none;
+}
+
+.ui-dialog-titlebar button{
+	display: none;
+}
+
+
+footer{
+	padding: 1px;
+	background-color: #303F9F;
+	position: fixed;
+	color:white;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+footer div img{
+	height: 60px;
+	padding: 10px;
+}
+
+	
+
+
+#errorLogin{
+	display: none;
+	text-align: center;
+}
+
+#patrocinio{
+	margin-top: 7px;
+}

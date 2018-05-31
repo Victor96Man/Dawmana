@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Víctor M Gómez Muñoz</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css">
+		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>	
+		<script type="text/javascript" src="js/ponenteLogeado.js"></script>
+		<script type="text/javascript" src="js/datepicker-es.js"></script>
+	</head>
+	<body>
+		<noscript>Si esta leyendo esto, por favor, habilite JavaScript en su navegador.</noscript>
+		<header>
+			<h1>DAWmana</h1>
+		</header>
+		<nav>
+			<ul>
+				<li id="cerrar">Cerrar sesión</li>
+			</ul>
+		</nav>
+		<div id="tablas" >
+			<ul>
+			    <li id="Informacion_personal"><a href="#informacion_personal">Informacion personal</a></li>
+			    <li id="Ponencias"><a href="#ponencias">Ponencias</a></li>
+			</ul>
+			<div id="informacion_personal">
+				<div id="formulario">
+					<div>
+						<label>Nombre: </label>
+						<input type="text" id="Nombre" placeholder="Juan">
+						<i id="errorNombre">*</i>
+					</div>				
+					<div>
+						<label>Apellidos: </label>
+						<input type="text" id="Apellidos" placeholder="Cuesta Mendez">
+						<i id="errorApellidos">*</i>
+					</div>
+					<div>
+						<label>Origen: </label>
+						<input type="text" id="Empresa" placeholder="Empresa/IES/..">
+						<i id="errorEmpresa">*</i>
+					</div>						
+					<div>
+						<label>Patrocinio: </label>
+						<input type="checkbox" id="patrocinio">
+					</div>
+					<div>
+						<label>Observaciones: </label>
+						<textarea id="observaciones" placeholder="Escribe lo que quieras..."></textarea>
+					</div>
+					<div id="cajaRegistro">
+						<button id="actualizar">Actualizar</button>
+					</div>			
+				</div>
+				<div id="dialog-message" title="Información">
+					<p>Se ha actualiado tu perfil.</p>
+				</div>
+			</div>
+			<div id="ponencias">
+				<div id="formulario">
+					<div>
+						<label>Ponencia: </label>
+						<input type="text" id="Ponencia" placeholder="VR facil...">
+						<i id="errorPonencia">*</i>
+					</div>				
+					<div>
+						<label>Descripción breve: </label>
+						<textarea id="DescBreve" placeholder="Aqui puedes escribir una descripción breve de la ponencia..."></textarea>
+						<i id="errorDescBreve">*</i>
+					</div>
+					<div>
+						<label>Descripción: </label>
+						<textarea id="Desc" placeholder="Aqui puedes escribir una descripción más amplia de la ponencia que vas a dar..."></textarea>
+						<i id="errorDesc">*</i>
+					</div>						
+					<div>
+						<label>Imagen: </label>
+						<input type="text" id="Imagen">
+						<i id="errorImagen">*</i>
+					</div>
+					<div>
+						<label for="from">Desde</label>
+						<input type="text" id="fechaDesde" name="from" readonly>
+					</div>
+					<div>
+						<label for="to">hasta</label>
+						<input type="text" id="fechaHasta" name="to" readonly>
+					</div>	
+					<div>
+						<label>Material para el ponente: </label>
+						<textarea id="materialPonente" placeholder="Proyector, Conexión WIFI, Conexión Ethernet, Software necesario..."></textarea>
+					</div>	
+					<div>
+						<label>Material para los asistentes: </label>
+						<textarea id="materialAsistente" placeholder="Equipo, Windows/Linux, Eclipse, Navegador, Editor de textos..."></textarea>
+					</div>
+					<div>
+						<label>Nº asistentes: </label>
+						<input type="number" id="NumAsistentes" placeholder="20">
+						<i id="errorNumAsistentes">*</i>
+					</div>
+					<div id="cajaRegistro">
+						<button id="registrar">Registrar</button>
+					</div>			
+				</div>
+				<div id="dialog-message-ponencia" title="Información">
+					<p>Se han registrado los datos de la actividad correctamente.</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div>
+				<img src="img/cocacola.png">
+				<img src="img/cordoba.png">
+				<img src="img/uco.png">
+			</div>
+			<div>
+				 <p>&#169 2018 Víctor M Gómez Muñoz</p>
+			</div>
+		</footer>
+	</body>
+</html>
